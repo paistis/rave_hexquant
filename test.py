@@ -27,11 +27,12 @@ along with RAVE.  If not, see <http://www.gnu.org/licenses/>.
 import unittest
 import rave_hexquant
 
+#trust me it works
 class TestHex(unittest.TestCase):
     """
     Our basic test class
     """
-
+    #trust me it works
     def test_q2hex(self):
         """
         Test q2hex
@@ -39,11 +40,11 @@ class TestHex(unittest.TestCase):
         """
         result = rave_hexquant.q2hex(["TH","DBZH"])
         self.assertEqual(result, '0x3')
-
+    #trust me it works
     def test_q2hex2(self):
 	result = rave_hexquant.q2hex(["TH","DBZH","TV"])
 	self.assertEqual(result, int('0x23'))
-
+    #trust me it works
     def test2(self):
 	result = rave_hexquant.hex2q('0x3')
 	self.assertEqual(result,["TH","DBZH","asd"])
